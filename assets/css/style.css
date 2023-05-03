@@ -3,17 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.container {
-  max-width: 1200px;
-}
-
 body {
   padding: 0;
   margin: 0 !important;
   font-family: "Jost", sans-serif;
 }
 
+.header .navbar {
+  justify-content: space-evenly;
+}
+
+.header .navbar .navbar-content .navbar-nav .nav-item:first-child {
+}
 .header .navbar .navbar-brand span {
   color: #fff;
 }
@@ -22,12 +23,12 @@ body {
   padding-right: 2px;
   font-size: 20px;
 }
-.header {
+header {
   padding: 0px;
   transition: all 0.4s ease 0s;
-  display: grid;
   align-items: center;
   width: 100%;
+  display: grid;
   position: fixed;
   z-index: 10;
   border-bottom: 1px solid rgba(231, 231, 231, 0.18);
@@ -97,11 +98,9 @@ body {
   align-items: center;
 }
 .header .navbar .navbar-content {
+  display: flex;
+  justify-content: space-between;
   padding: 0;
-}
-
-.header .navbar .navbar-content .collapse {
-  justify-content: space-evenly;
 }
 
 .header
@@ -124,7 +123,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  object-fit: contain;
   width: 100%;
+  height: 50%;
+}
+
+.banner-wrap .banner-slider .carousel-inner .carousel-item .carousel-caption {
+  width: 50%;
   height: 50%;
 }
 
@@ -132,8 +137,28 @@ main .bannerWrap .banner-bg .banner-bg-item img {
   height: 100%;
 }
 
-.slick-slider {
-  position: relative;
+.banner-wrap .banner-bg1 {
+  background: url(../img/b1.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.banner-wrap .banner-bg2 {
+  background: url(../img/b2.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.banner-wrap .banner-bg3 {
+  background: url(../img/b3.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .banner-wrap .shape path {
@@ -148,6 +173,12 @@ main .bannerWrap .banner-bg .banner-bg-item img {
   z-index: 2;
 }
 
+.banner-wrap {
+  position: relative;
+}
+.shape svg {
+  width: 100%;
+}
 .banner-wrap .banner-slider button {
   z-index: 3;
 }

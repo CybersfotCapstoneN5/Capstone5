@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+body {
+  padding: 0;
+  margin: 0 !important;
+  font-family: "Jost", sans-serif;
+}
+
+.header .navbar .navbar-brand span {
+  color: #fff;
+}
+
+.header .navbar .navbar-brand .fa-solid {
+  padding-right: 2px;
+  font-size: 20px;
+}
+.header {
+  padding: 0px;
+  transition: all 0.4s ease 0s;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+}
+
+/* Hader Nav test */
+/* header nav {
+  background-color: gray;
+} */
+.header .navbar .navbar-content .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+}
+/* header .navbar .navbar-brand {
+  display: flex;
+} */
+.navbar .navbar-brand {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.header .navbar .navbar-icon {
+  display: flex;
+}
+
+.navbar .navbar-brand span.logo {
+  text-transform: none;
+  display: block;
+  font-size: 12px;
+  padding-left: 25px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.header .navbar .navbar-content .navbar-icon .navbar-icon-search {
+  cursor: pointer;
+  line-height: 34px;
+  color: #fff;
+  text-align: center;
+  width: 34px;
+  height: 34px;
+  background-color: green;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.header .navbar-icon .navbar-icon-search i {
+  font-size: 13px;
+  align-items: center;
+}
+
+.header .navbar-icon .navbar-icon-theme {
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+.header .navbar-icon .navbar-icon-theme i {
+  align-items: center;
+}
+.header .navbar .navbar-content {
+  padding: 0;
+}
+
+.header .navbar .navbar-content .collapse {
+  justify-content: space-evenly;
+}
+
+.header
+  .navbar
+  .navbar-content
+  .navbar-nav
+  .nav-item
+  .dropdown-menu
+  .dropdown-item {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.header .navbar .navbar-content .navbar-nav .nav-item .dropdown-menu {
+  left: -36px;
+}
+/* Main - Banner Wrap */
+
+.banner-wrap .banner-slider .carousel-inner .carousel-item img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50%;
+}
+
+main .bannerWrap .banner-bg .banner-bg-item img {
+  height: 100%;
+}
+
+.slick-slider {
+  position: relative;
+}
+
+.banner-wrap .shape path {
+  fill: #fff;
+}
+
+.shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.banner-wrap .banner-slider button {
+  z-index: 3;
+}
+.hero-overlay {
+  background: rgba(29, 42, 55, 0.423);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}

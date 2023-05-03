@@ -23,14 +23,14 @@ body {
   padding-right: 2px;
   font-size: 20px;
 }
-header {
+.header {
   padding: 0px;
   transition: all 0.4s ease 0s;
   align-items: center;
   width: 100%;
   display: grid;
   position: fixed;
-  z-index: 10;
+  z-index: 999;
   border-bottom: 1px solid rgba(231, 231, 231, 0.18);
 }
 
@@ -182,6 +182,13 @@ main .bannerWrap .banner-bg .banner-bg-item img {
 .banner-wrap .banner-slider button {
   z-index: 3;
 }
+
+.banner-slider .slick-next.slick-arrow {
+  right: 22px;
+}
+.banner-slider .slick-prev.slick-arrow {
+  left: 22px;
+}
 .hero-overlay {
   background: rgba(29, 42, 55, 0.423);
   position: absolute;
@@ -190,4 +197,49 @@ main .bannerWrap .banner-bg .banner-bg-item img {
   width: 100%;
   height: 100%;
   z-index: 1;
+}
+
+.about .about-us {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* About Us */
+.title-small {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #7e7d7d;
+  display: block;
+}
+.title-big {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
+}
+ul.service-list li {
+  list-style: none;
+}
+ul.service-list {
+  padding: 0;
+}
+ul.service-list li a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #3f3a64;
+  position: relative;
+}
+ul.service-list li a span.fa {
+  color: #009f4d;
+  margin-right: 5px;
+  opacity: 0.8;
+}
+.about .about-us .row .HomeAboutImages img {
+  border-radius: 8px;
 }

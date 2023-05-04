@@ -1,0 +1,324 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+/* HEADER***** */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  z-index: 1;
+}
+
+header nav .nav-item {
+  position: relative;
+}
+/* header .navbar-scrolled {
+  background-color: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+} */
+
+header .navbar .logo__content {
+  line-height: 1px;
+}
+
+/* the sentence under logo  */
+header nav .logo__content span {
+  font-size: 14px;
+}
+/* the serach icon  */
+header .header-search .btn-material i {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+/* CAROUSEL***** */
+.carousel .carousel-inner {
+  height: 60vh;
+  background-image: url(../../img/b1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.carousel .carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-color: rgba(39, 43, 54, 0.7);
+}
+.carousel .carousel-item h2 {
+  font-size: 50px;
+}
+
+/* ABOUT US***** */
+/* left  */
+.ourCompany .container .ourcompany_Left img {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+}
+.ourCompany .container .ourcompany_Left .greenShadow {
+  width: 500px;
+  height: 500px;
+  border-radius: 25% 70% 84% 22%/ 42% 75% 25% 75%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  background-color: #8cc6a8;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+}
+.ourCompany .container .ourcompany_Left .img_txt {
+  min-height: 200px;
+  min-width: 200px;
+  background-color: #009f4d;
+  transform: rotate(45deg);
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+  position: absolute;
+  border-radius: 10px;
+  text-align: center;
+  right: 80px;
+  bottom: 20px;
+  padding: 50px;
+}
+.ourCompany .container .ourcompany_Left .img_txt .txt_box {
+  transform: rotate(-45deg);
+}
+/* right  */
+.ourCompany .container .ourCompany_Right h5 {
+  font-size: 10px;
+}
+
+.ourCompany .container .ourCompany_Right a:first-of-type {
+  padding: 10px 50px;
+  background-color: #009f4d;
+}
+/* ABOUT US-boxes***** */
+.ourCompanyBoxes .container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ourCompanyBoxes .container .bg_box {
+  display: flex;
+  flex-direction: row;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.ourCompanyBoxes .container .bg_box .txt_box {
+  width: 100%;
+}
+
+/* MARKETING*****  */
+.marketing {
+  background-color: #f8f9fa;
+}
+.marketing .txt_col {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+/* FIXED VIDEO****** */
+.fixedVideo {
+  background-image: url(../../img/bg1.jpg);
+  /* filter: brightness(80%) grayscale(50%); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-items: center;
+  padding: 50px 0;
+}
+.fixedVideo::before {
+  content: "";
+  min-height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #1d2a37b3;
+  position: absolute;
+  z-index: -1;
+}
+
+/* MEETTHETEAM***** */
+.meetTheTeam .container .image_box {
+  position: relative;
+}
+.meetTheTeam .image_overlay {
+  position: absolute;
+  background-color: rgba(20, 20, 20, 0.7);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.meetTheTeam .container .image_box:hover .image_overlay {
+  opacity: 1;
+}
+.meetTheTeam .image_overlay p {
+  text-align: center;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  transform: translateY(20px);
+  transition: all 0.5s;
+}
+.meetTheTeam .image_box:hover .image_overlay p {
+  transform: translateY(0);
+}
+.meetTheTeam .image_overlay i {
+  margin: 0 5px;
+  transform: translateY(20px);
+  transition: all 0.5s;
+}
+
+.meetTheTeam .image_box:hover .image_overlay i {
+  transform: translateY(0);
+}
+.meetTheTeam .container .txt_box h3:hover {
+  color: #009f4d;
+}
+/* CHOOSEUS******  */
+.chooseUs {
+  background-color: #f8f9fa;
+}
+
+.chooseUs .chooseUs_txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.chooseUs .chooseUs_icon {
+  border: 1px solid;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* PROJECTS****** */
+/* FOOTER******  */
+footer .copyRight {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer ul li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+footer ul li a {
+  color: #6c757d;
+}
+footer ul li a:hover {
+  color: white;
+}
+/* ---------------------------SERCIVES PAGE----------------- */
+/* SERVICES****** */
+main .services {
+  background-color: #f8f9fa;
+}
+main .services__content {
+  background-color: white;
+  height: 100%;
+}
+main .col-lg-6 {
+}
+/* INDUSTRY****** */
+main .industry .industry__content {
+  position: relative;
+  grid-auto-flow: column;
+}
+main .industry .col-lg-4 {
+  border-radius: 10px;
+}
+main .industry .industry__content .industry__txt a:hover {
+  color: #009f4d;
+}
+/* CONTACT****** */
+main .contact {
+  background-image: url(../../img/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-items: center;
+}
+main .contact::before {
+  content: "";
+  min-height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #1d2a37b3;
+  position: absolute;
+  z-index: -1;
+}
+main .contact .contact_box {
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  flex-direction: row;
+  padding: 20px 0;
+  align-items: center;
+}
+main .contact .col-lg-6 .contact_form form input {
+  background-color: rgba(128, 128, 128, 0.1);
+  border: none;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  height: 40px;
+  width: 90%;
+}
+main .contact .col-lg-6 .contact_form form textarea {
+  background-color: rgba(128, 128, 128, 0.1);
+  border: none;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  height: 80px;
+  width: 90%;
+}
+main .contact .col-lg-6 .contact_form button {
+}
+
+/* SOLUTION ******  */
+main .solution {
+  background-color: #f8f9fa;
+}
+main .solution_content_box {
+  background-color: white;
+  padding: 20px 60px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  transform: translateY(10px);
+  transition: all 0.5s;
+}
+main .solution_content_box:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+}

@@ -2934,6 +2934,8 @@ h2.title {
     font-size: 35px;
   }
   p.inner-page-para {
+    color: #fff;
+    opacity: 0.7;
     font-size: 18px;
   }
 }
@@ -2996,4 +2998,196 @@ h2.title {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 15px;
+}
+
+/* Contact Page */
+
+.contact-info .icon-box span.fa {
+  color: #e5e5e5;
+  color: var(--heading-color);
+  font-size: 50px;
+}
+
+.contact-info .single-contact-info:first-child .icon-box span.fa {
+  font-size: 40px;
+}
+
+.contact-info .single-contact-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+  background: var(--bg-color);
+  padding: 30px;
+  box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+  border-radius: var(--border-radius);
+}
+.breadcrumb-bg-about {
+  background: url(../img/b1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  position: relative;
+  z-index: 0;
+}
+.contact-info .text-box p a {
+  color: var(--font-color);
+}
+
+.contact-info .text-box p a:hover {
+  color: var(--heading-color);
+}
+p.inner-page-para {
+  color: #fff;
+  font-size: 20px;
+  opacity: 0.7;
+}
+@media (max-width: 1024px) {
+  .contact-info .single-contact-info:first-child .icon-box span.fa {
+    font-size: 30px;
+  }
+}
+
+/* Form contact main */
+
+.contact-main {
+  background: var(--bg-lightgrey);
+}
+
+.contact-main .d-grid {
+  display: grid;
+}
+
+.contact-main .grid-col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-main .grid-col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact-main .grid-col-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.contact-main a.action img {
+  margin-left: 4px;
+}
+
+.contact-main .form-top-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact-main .top-map {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.contact-main .form-top1 p {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-main .map iframe {
+  border: none;
+  width: 100%;
+  min-height: 400px;
+  display: block;
+  -webkit-filter: var(--iframe-filter);
+  -moz-filter: var(--iframe-filter);
+  -ms-filter: var(--iframe-filter);
+  -o-filter: var(--iframe-filter);
+  filter: var(--iframe-filter);
+}
+
+.contact-main .map-content-9 form input,
+.contact-main .map-content-9 form textarea {
+  width: 100%;
+  color: var(--font-color);
+  background: var(--bg-color);
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  border: none;
+  font-family: inherit;
+  padding: 0px 25px;
+  border: 1px solid var(--border-color-light);
+  outline: none;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+  height: 60px;
+  display: inline-block;
+  line-height: 50px;
+  box-shadow: none;
+}
+
+.contact-main .map-content-9 h5 {
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: #233142;
+}
+
+.contact-main .map-content-9 form textarea {
+  resize: none;
+  height: 130px;
+  margin: 30px 0;
+}
+
+.contact-main .map-content-9 form input:focus,
+.contact-main .map-content-9 form textarea:focus {
+  outline: none;
+  border: 1px solid var(--heading-color);
+  background: none;
+}
+
+@media (max-width: 800px) {
+  .contact-main h4.sub-feat-text {
+    margin-bottom: 10px;
+    font-size: 33px;
+  }
+  .contact-main p.sub-para {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-main .map iframe {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 568px) {
+  .contact-main .map iframe {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-main h4.sub-feat-text {
+    margin-bottom: 8px;
+    font-size: 30px;
+  }
+  .contact-main p.sub-para {
+    font-size: 14px;
+    margin-bottom: 35px;
+    line-height: 20px;
+  }
+  .contact-main .map iframe {
+    min-height: 270px;
+  }
+  .contact-main button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 384px) {
+  .contact-main h4.sub-feat-text {
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 28px;
+  }
 }

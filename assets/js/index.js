@@ -157,7 +157,7 @@ jQuery("[data-color]").each(function () {
   jQuery(this).css("color", jQuery(this).attr("data-color"));
 });
 
-// When the user scrolls down 20px from the top of the document, show the button
+// Khi scroll chuột xuống 20px thì button go top sẽ hiện lên
 window.onscroll = function () {
   scrollFunction();
 };

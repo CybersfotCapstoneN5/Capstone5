@@ -719,5 +719,17 @@
         // Your custom options
       });
     </script>
+    <script>
+      // Menu
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+          $("#site-header").addClass("nav-fixed");
+        } else {
+          $("#site-header").removeClass("nav-fixed");
+        }
+      });
+    </script>
   </body>
 </html>

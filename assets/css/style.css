@@ -581,26 +581,6 @@ header.nav-fixed {
   color: var(--para-color);
 }
 
-/* Test thử Flatsome Icons  */
-.menu-item-down-arrow::after {
-  position: absolute;
-  right: -6px;
-  top: 18px;
-  display: inline-block;
-  content: "\f107";
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: 14px;
-  font-size: 14px;
-  font-size: inherit;
-  color: #fff;
-  opacity: 0.8;
-}
-
-.nav-fixed .menu-item-down-arrow::after {
-  color: var(--heading-color);
-  transition: all 0.8s ease;
-  opacity: 0.7;
-}
 nav ul li {
   display: inline-block;
 }
@@ -783,6 +763,7 @@ nav ul li a:hover {
     height: auto;
     padding: 15px 0;
   }
+
   .navbar-expand-lg .navbar-nav .nav-link {
     display: block;
   }
@@ -924,15 +905,15 @@ nav ul li a:hover {
   width: 100%;
 }
 
-.banner-slider {
+.banner-wrap .banner-slider {
   height: 100%;
 }
 
-.banner-slider > .banner-slide {
+.banner-wrap .banner-slider > .banner-slide {
   display: none;
 }
 
-.banner-slider > .banner-slide:first-child {
+.banner-wrap .banner-slider > .banner-slide:first-child {
   display: block;
 }
 
@@ -973,7 +954,7 @@ nav ul li a:hover {
   align-items: center;
 }
 
-.banner-slider .slick-arrow {
+.banner-wrap .banner-slider .slick-arrow {
   position: absolute;
   right: 25px;
   bottom: 50px;
@@ -990,7 +971,7 @@ nav ul li a:hover {
   border: 1px solid var(--border-color);
 }
 
-.banner-slider .slick-arrow:before {
+.banner-wrap .banner-slider .slick-arrow:before {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 16px;
   text-align: center;
@@ -998,19 +979,19 @@ nav ul li a:hover {
   color: #3f3a64;
 }
 
-.banner-slider .slick-arrow.slick-prev {
+.banner-wrap .banner-slider .slick-arrow.slick-prev {
   right: 95px;
 }
 
-.banner-slider .slick-arrow.slick-prev:before {
+.banner-wrap .banner-slider .slick-arrow.slick-prev:before {
   content: "\f060";
 }
 
-.banner-slider .slick-arrow.slick-next {
+.banner-wrap .banner-slider .slick-arrow.slick-next {
   right: 25px;
 }
 
-.banner-slider .slick-arrow.slick-next:before {
+.banner-wrap .banner-slider .slick-arrow.slick-next:before {
   content: "\f061";
 }
 
@@ -1136,14 +1117,14 @@ nav ul li a:hover {
   .slick-initialized .banner-slide {
     min-height: 550px;
   }
-  .banner-slider .slick-arrow.slick-prev {
+  .banner-wrap .banner-slider .slick-arrow.slick-prev {
     right: 80px;
   }
-  .banner-slider .slick-arrow {
+  .banner-wrap .banner-slider .slick-arrow {
     width: 45px;
     height: 45px;
   }
-  .banner-slider .slick-arrow:before {
+  .banner-wrap .banner-slider .slick-arrow:before {
     font-size: 14px;
     line-height: 42px;
   }
@@ -2708,7 +2689,13 @@ body {
 body.search-active {
   overflow: hidden;
 }
-body.search-active .search-input {
+body.search-active
+  header
+  .navbar
+  .navbar-collapse
+  .header-search
+  form
+  .search-input {
   opacity: 1;
   transform: none;
   pointer-events: all;
@@ -2738,7 +2725,7 @@ body.search-active .control .icon-search {
 }
 
 /* Search Input */
-.search-input {
+header .navbar .navbar-collapse .header-search .search-input {
   height: 80px;
   position: absolute;
   top: 50%;
@@ -2750,7 +2737,7 @@ body.search-active .control .icon-search {
   transition: all 0.3s ease-in-out;
   width: 88%;
 }
-.search-input input {
+header .navbar .navbar-collapse .header-search .search-input input {
   color: #fff !important;
   font-size: 54px;
   border: 0;
@@ -2761,26 +2748,6 @@ body.search-active .control .icon-search {
   font-weight: 200;
   height: 100vh;
   width: 100%;
-}
-.search-input ::-webkit-input-placeholder {
-  color: #eee;
-}
-.search-input :-moz-placeholder {
-  color: #eee;
-  opacity: 1;
-}
-.search-input ::-moz-placeholder {
-  color: #eee;
-  opacity: 1;
-}
-.search-input :-ms-input-placeholder {
-  color: #eee;
-}
-
-/* Container */
-.container.container-dark {
-  background: #22313f;
-  color: #fff;
 }
 
 /* Control btn */
@@ -2818,7 +2785,7 @@ body.search-active .control .icon-search {
     height: 40px;
     font-size: 14px;
   }
-  .search-input input {
+  header .navbar .navbar-collapse .header-search .search-input input {
     position: absolute;
     right: -50%;
     width: initial;
@@ -2833,14 +2800,14 @@ body.search-active .control .icon-search {
     right: -110px;
     z-index: 9;
   }
-  .search-input input {
+  header .navbar .navbar-collapse .header-search .search-input input {
     position: absolute;
     right: -80px;
   }
 }
 
 @media only screen and (max-width: 568px) {
-  .search-input input {
+  header .navbar .navbar-collapse .header-search .search-input input {
     font-size: 46px;
   }
   .header-search .icon-close {
@@ -2854,19 +2821,19 @@ body.search-active .control .icon-search {
   .header-search {
     top: 6px;
   }
-  .search-input input {
+  header .navbar .navbar-collapse .header-search .search-input input {
     font-size: 40px;
   }
 }
 
 @media only screen and (max-width: 415px) {
-  .search-input input {
+  header .navbar .navbar-collapse .header-search .search-input input {
     right: -125px;
   }
 }
 
 @media only screen and (max-width: 375px) {
-  .search-input input {
+  header .navbar .navbar-collapse .header-search .search-input input {
     font-size: 35px;
   }
   .header-search .icon-close {
@@ -3209,5 +3176,30 @@ p.inner-page-para {
     margin-bottom: 20px;
     font-size: 28px;
     line-height: 28px;
+  }
+}
+
+/* Animation */
+
+.animation-container {
+  height: 200px; /* Điều chỉnh độ cao container tùy ý */
+  overflow: hidden; /* Ẩn phần vượt quá kích thước container */
+  position: relative;
+}
+
+.flipInX {
+  position: absolute;
+  top: 100%; /* Bắt đầu ở vị trí ngoài container */
+  left: 50%;
+  transform: translateX(-50%); /* Canh giữa theo chiều ngang */
+  animation: slide-down 1s ease-in-out forwards; /* Thời gian và kiểu animation */
+}
+
+@keyframes slide-down {
+  0% {
+    top: -50%; /* Vị trí bắt đầu ở ngoài container */
+  }
+  100% {
+    top: 0; /* Vị trí kết thúc ở phía trên container */
   }
 }

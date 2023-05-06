@@ -622,10 +622,10 @@ nav ul li a:hover {
   padding: 1rem 0;
 }
 
-/* .nav-fixed .navbar-expand-lg .navbar-nav .nav-link {
+.nav-fixed .navbar-expand-lg .navbar-nav .nav-link {
   color: #3f3a64;
   opacity: 0.7;
-} */
+}
 
 .nav-fixed .navbar-expand-lg .navbar-nav li.nav-item.active .nav-link {
   color: var(--primary-color);
@@ -636,10 +636,10 @@ nav ul li a:hover {
   color: #3f3a64;
   opacity: 0.9;
 }
-/* 
+
 .nav-fixed .navbar-expand-lg .navbar-brand {
   color: #3f3a64;
-} */
+}
 
 .nav-fixed .navbar-expand-lg .navbar-brand span.sub-log {
   border-top: 8px solid var(--primary-color);
@@ -2478,29 +2478,6 @@ form.subscribe {
   z-index: 1;
 }
 
-.owl-carousel .fadeOut {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
-}
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .owl-height {
   transition: height 0.5s ease-in-out;
 }
@@ -3195,28 +3172,28 @@ p.inner-page-para {
 
 /* Animation */
 
-.animation-container {
-  height: 200px; /* Điều chỉnh độ cao container tùy ý */
-  overflow: hidden; /* Ẩn phần vượt quá kích thước container */
+/* .animation-container {
+  height: 200px;
+  overflow: hidden;
   position: relative;
 }
 
 .flipInX {
   position: absolute;
-  top: 100%; /* Bắt đầu ở vị trí ngoài container */
+  top: 100%;
   left: 50%;
-  transform: translateX(-50%); /* Canh giữa theo chiều ngang */
-  animation: slide-down 1s ease-in-out forwards; /* Thời gian và kiểu animation */
+  transform: translateX(-50%);
+  animation: slide-down 1s ease-in-out forwards;
 }
 
 @keyframes slide-down {
   0% {
-    top: -50%; /* Vị trí bắt đầu ở ngoài container */
+    top: -50%;
   }
   100% {
-    top: 0; /* Vị trí kết thúc ở phía trên container */
+    top: 0;
   }
-}
+} */
 
 /* HEADER***** */
 
@@ -3554,4 +3531,259 @@ main .solution_content_box {
 main .solution_content_box:hover {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
   transform: translateY(0);
+}
+
+.navbar .search-right {
+  margin: 0 20px;
+}
+
+.navbar .search-right a {
+  display: block;
+  padding: 14px 0px;
+  margin-top: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.nav-fixed .search-right a {
+  color: var(--font-color);
+}
+
+.nav-fixed .search-right a:hover {
+  color: var(--heading-color);
+}
+
+.navbar .search-right a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.nav-fixed .search-right a:hover {
+  color: var(--primary-color);
+}
+@media only screen and (max-width: 480px) {
+  .navbar-brand img {
+    max-width: 200px;
+  }
+  .mobile-position {
+    top: 13px;
+  }
+  .navbar .navbar-brand {
+    font-size: 26px;
+  }
+  .navbar .navbar-brand span.logo {
+    font-size: 13px;
+    padding-left: 38px;
+  }
+  .navbar .search-right .popup {
+    padding: 40px 30px;
+  }
+  .navbar .search-right .popup form input[type="search"] {
+    font-size: 20px;
+    height: 60px;
+    padding: 0 30px;
+  }
+  .navbar .search-right .popup form button {
+    height: 60px;
+  }
+}
+body {
+  /* Search Active */
+}
+body.search-active {
+  overflow: hidden;
+}
+body.search-active .search-input {
+  opacity: 1;
+  transform: none;
+  pointer-events: all;
+}
+body.search-active .icon-close {
+  opacity: 1;
+  transform: rotate(-90deg);
+}
+body.search-active .control {
+  cursor: default;
+}
+body.search-active .control .btn-material {
+  transform: scale(70);
+}
+body.search-active .control .icon-material-search {
+  opacity: 0;
+}
+
+/* Close Icon */
+.header-search .icon-close {
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  font-size: 70px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Search Input */
+.search-input {
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  margin-top: -40px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(40px, 0);
+  transition: all 0.3s ease-in-out;
+  width: 88%;
+}
+.search-input input {
+  color: #fff !important;
+  font-size: 54px;
+  border: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  outline: 0;
+  font-weight: 200;
+  height: 100vh;
+  width: 100%;
+}
+.search-input ::-webkit-input-placeholder {
+  color: #eee;
+}
+.search-input :-moz-placeholder {
+  color: #eee;
+  opacity: 1;
+}
+.search-input ::-moz-placeholder {
+  color: #eee;
+  opacity: 1;
+}
+.search-input :-ms-input-placeholder {
+  color: #eee;
+}
+
+/* Container */
+.container.container-dark {
+  background: #22313f;
+  color: #fff;
+}
+
+/* Control btn */
+.control {
+  cursor: pointer;
+}
+.control .btn-material {
+  line-height: 45px;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  background: var(--primary-color);
+  outline: 0;
+  transform-origin: 50%;
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+body {
+  /* Search Active */
+}
+body.search-active {
+  overflow: hidden;
+}
+body.search-active .search-input {
+  opacity: 1;
+  transform: none;
+  pointer-events: all;
+}
+body.search-active .icon-close {
+  opacity: 1;
+  transform: rotate(-90deg);
+}
+body.search-active .control {
+  cursor: default;
+}
+body.search-active .control .btn-material {
+  transform: scale(70);
+}
+body.search-active .control .icon-material-search {
+  opacity: 0;
+}
+
+/* Close Icon */
+.header-search .icon-close {
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  font-size: 70px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Search Input */
+.search-input {
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  margin-top: -40px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(40px, 0);
+  transition: all 0.3s ease-in-out;
+  width: 88%;
+}
+.search-input input {
+  color: #fff !important;
+  font-size: 54px;
+  border: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  outline: 0;
+  font-weight: 200;
+  height: 100vh;
+  width: 100%;
+}
+.search-input ::-webkit-input-placeholder {
+  color: #eee;
+}
+.search-input :-moz-placeholder {
+  color: #eee;
+  opacity: 1;
+}
+.search-input ::-moz-placeholder {
+  color: #eee;
+  opacity: 1;
+}
+.search-input :-ms-input-placeholder {
+  color: #eee;
+}
+
+/* Container */
+.container.container-dark {
+  background: #22313f;
+  color: #fff;
+}
+
+/* Control btn */
+.control {
+  cursor: pointer;
+}
+.control .btn-material {
+  line-height: 45px;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  background: var(--primary-color);
+  outline: 0;
+  transform-origin: 50%;
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.control .icon-material-search {
+  color: #fff;
+  transition: opacity 0.3s ease-in-out;
 }

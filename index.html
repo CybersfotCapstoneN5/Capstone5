@@ -19,20 +19,22 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <!-- Animation -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
+    <!-- Fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <title>Home Capstone5</title>
     <meta name="robots" content="max-image-preview:large" />
     <!-- Main css -->
     <link rel="stylesheet" href="./assets/css/style.css" media="all" />
   </head>
-  <body
-    id="top-gap-fixed-header"
-    class="home page-template page-template-page-templates page-template-template-homepage page-template-page-templatestemplate-homepage-php page page-id-7"
-  >
+  <body class="home page-template page">
     <!--header-->
     <header id="site-header" class="fixed-top main-header">
       <div class="container w3HeaderLogoEd">
@@ -43,7 +45,6 @@
               <span class="logo">Vision to your Future</span>
             </a>
           </h1>
-
           <button
             class="navbar-toggler collapsed"
             type="button"
@@ -56,44 +57,27 @@
             <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
             <span class="navbar-toggler-icon fa icon-close fa-times"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbar-content">
             <ul id="primary-menu" class="navbar-nav mx-lg-auto">
-              <li
-                id="menu-item-23"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-23 nav-item active"
-              >
-                <a
-                  href="https://wp.w3layouts.com/corpvision/"
-                  class="nav-link active"
-                  >Home</a
-                >
+              <li class="menu-item nav-item active">
+                <a href="index.html" class="nav-link active">Home</a>
               </li>
-              <li
-                id="menu-item-24"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24 nav-item"
-              >
+              <li class="menu-item nav-item">
                 <a href="#" class="nav-link">About</a>
               </li>
-              <li
-                id="menu-item-25"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25 nav-item"
-              >
+              <li class="menu-item nav-item">
                 <a href="#" class="nav-link">Services</a>
               </li>
-              <li
-                id="menu-item-26"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26 nav-item dropdown"
-              >
+              <li class="menu-item nav-item dropdown">
                 <a
                   href="#"
                   class="nav-link dropdown-toggle"
                   data-toggle="dropdown"
-                  id="navbar-dropdown-menu-link-26"
                   aria-haspopup="true"
                   aria-expanded="false"
                   >Pages</a
                 >
+                <i class="fa-solid fa-chevron-down"></i>
                 <div
                   class="sub-menu dropdown-menu"
                   aria-labelledby="navbar-dropdown-menu-link-26"
@@ -116,14 +100,10 @@
                   >
                 </div>
               </li>
-              <li
-                id="menu-item-31"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31 nav-item"
-              >
+              <li id="menu-item-31" class="menu-item menu-item-31 nav-item">
                 <a href="./contact.html" class="nav-link">Contact</a>
               </li>
             </ul>
-
             <!-- Search -->
             <div class="header-search">
               <div class="control mr-3">
@@ -147,7 +127,6 @@
               </form>
             </div>
             <!-- //Search -->
-
             <!-- toggle switch for light and dark theme -->
             <div class="mobile-position text-center DarkandLight">
               <nav class="navigation">
@@ -168,15 +147,14 @@
       </div>
     </header>
     <div class="header-fixed-space-height"></div>
-
     <!-- Hero slider Start -->
     <div class="banner-wrap">
       <div class="banner-slider">
         <!-- hero slide start -->
         <div class="banner-slide bg-1">
-          <div class="container HomePageBannerSlider">
+          <div class="container animation-container">
             <div class="hero-content">
-              <h1 data-animation="flipInX" data-delay="0.8s" data-color="#fff">
+              <h1 class="flipInX" data-delay="0.8s" data-color="#fff">
                 We will solve your issues our vision to your future
               </h1>
               <p data-animation="fadeInDown" class="mt-4">
@@ -489,9 +467,9 @@
           <div class="col-lg-4 col-md-6 item">
             <a
               href="./assets/img/c1.jpg"
-              data-lightbox="example-set"
-              data-title="Project 1"
               class="zoom d-block"
+              data-fancybox
+              data-caption="Single image"
             >
               <img
                 class="card-img-bottom d-block"
@@ -1336,10 +1314,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- Main JS -->
-    <script src="./assets/js/index.js"></script>
 
-    <!-- esimonials carousel slider -->
+    <!-- Fancybox js -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <!-- Boostrap CDN -->
     <script src="https://cdn.usebootstrap.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -1347,5 +1324,10 @@
       src="https://kit.fontawesome.com/a239fd1622.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Main JS -->
+    <script src="./assets/js/index.js"></script>
+
+    <!-- esimonials carousel slider -->
   </body>
 </html>

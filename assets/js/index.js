@@ -39,7 +39,7 @@ $(".icon-close").click(function () {
 
 // End seach
 
-// Menu
+// Navbar sau khi scroll thì sẽ thay đổi css
 
 $(window).on("scroll", function () {
   var scroll = $(window).scrollTop();

@@ -449,6 +449,20 @@ header.active {
   background: rgba(0, 0, 0, 0.7);
 }
 
+.menu-item-has-children::after {
+  position: absolute;
+  right: -6px;
+  top: 18px;
+  display: inline-block;
+  content: "\f107";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 14px;
+  font-size: inherit;
+  color: #fff;
+}
+.nav-fixed .menu-item-has-children::after {
+  color: var(--heading-color);
+}
 button.navbar-toggler .icon-close {
   display: block;
 }

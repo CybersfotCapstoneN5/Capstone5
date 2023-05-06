@@ -622,10 +622,10 @@ nav ul li a:hover {
   padding: 1rem 0;
 }
 
-.nav-fixed .navbar-expand-lg .navbar-nav .nav-link {
+/* .nav-fixed .navbar-expand-lg .navbar-nav .nav-link {
   color: #3f3a64;
   opacity: 0.7;
-}
+} */
 
 .nav-fixed .navbar-expand-lg .navbar-nav li.nav-item.active .nav-link {
   color: var(--primary-color);
@@ -636,10 +636,10 @@ nav ul li a:hover {
   color: #3f3a64;
   opacity: 0.9;
 }
-
+/* 
 .nav-fixed .navbar-expand-lg .navbar-brand {
   color: #3f3a64;
-}
+} */
 
 .nav-fixed .navbar-expand-lg .navbar-brand span.sub-log {
   border-top: 8px solid var(--primary-color);
@@ -3535,7 +3535,10 @@ main .contact .col-lg-6 .contact_form form textarea {
 }
 main .contact .col-lg-6 .contact_form button {
 }
-
+main .contact .row .text-light h1,
+h5 {
+  color: #fff;
+}
 /* SOLUTION ******  */
 main .solution {
   background-color: #f8f9fa;

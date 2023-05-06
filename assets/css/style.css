@@ -598,7 +598,7 @@ header.nav-fixed {
 
 .nav-fixed .menu-item-down-arrow::after {
   color: var(--heading-color);
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
   opacity: 0.7;
 }
 nav ul li {

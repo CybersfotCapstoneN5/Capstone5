@@ -89,7 +89,7 @@
                   <a
                     class="text-success nav-link active"
                     aria-current="page"
-                    href="About.html"
+                    href="#"
                     ><b>ABOUT</b></a
                   >
                 </li>
@@ -113,9 +113,13 @@
                     <b>PAGES</b>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">BLOG POSTS</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">404 PAGE</a>
+                      <a class="dropdown-item" href="./blog-posts.html"
+                        >BLOG POSTS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./404.html">404 PAGE</a>
                     </li>
                     <li>
                       <a class="dropdown-item" href="#">LANDING PAGE</a>
@@ -126,7 +130,10 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./contact.html"
                     ><b>CONTACT</b></a
                   >
                 </li>
@@ -710,6 +717,18 @@
     <script>
       Fancybox.bind("[data-fancybox]", {
         // Your custom options
+      });
+    </script>
+    <script>
+      // Menu
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+          $("#site-header").addClass("nav-fixed");
+        } else {
+          $("#site-header").removeClass("nav-fixed");
+        }
       });
     </script>
   </body>

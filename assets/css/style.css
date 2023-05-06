@@ -581,6 +581,26 @@ header.nav-fixed {
   color: var(--para-color);
 }
 
+/* Test thử Flatsome Icons  */
+.menu-item-down-arrow::after {
+  position: absolute;
+  right: -6px;
+  top: 18px;
+  display: inline-block;
+  content: "\f107";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 14px;
+  font-size: 14px;
+  font-size: inherit;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.nav-fixed .menu-item-down-arrow::after {
+  color: var(--heading-color);
+  transition: all 0.5s ease;
+  opacity: 0.7;
+}
 nav ul li {
   display: inline-block;
 }
